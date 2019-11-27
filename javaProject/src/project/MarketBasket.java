@@ -143,12 +143,12 @@ public class MarketBasket extends JFrame {
 					return;
 				}
 				int result=0;
-				int response=JOptionPane.showConfirmDialog(MarketBasket.this, "주문번호 "+(num)+"번 상품을 삭제하시겠습니까?");
+				int response=JOptionPane.showConfirmDialog(MarketBasket.this, (num)+"번 상품을 삭제하시겠습니까?");
 				if(response==JOptionPane.YES_OPTION) {
 					result=dao.deleteSell22(num);
 				} 
 				if(result==1) {
-					JOptionPane.showMessageDialog(MarketBasket.this, "주문번호 "+(num)+"번 상품이 삭제되었습니다.");
+					JOptionPane.showMessageDialog(MarketBasket.this, (num)+"번 상품이 삭제되었습니다.");
 					tfSear.setText("");
 					refreshTable();
 				} else if(response==JOptionPane.NO_OPTION) {

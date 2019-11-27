@@ -128,7 +128,7 @@ public class MarketOrder extends JFrame {
 		button.setBounds(402, 20, 109, 26);
 		contentPane.add(button);
 		
-		JButton button_1 = new JButton("간편구매 추가");
+		JButton button_1 = new JButton("간편주문 추가");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int idx = table.getSelectedRow();
