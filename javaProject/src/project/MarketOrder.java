@@ -134,7 +134,7 @@ public class MarketOrder extends JFrame {
 				int idx = table.getSelectedRow();
 				if ( idx== -1 ) {
 					JOptionPane.showMessageDialog
-					(MarketOrder.this, "관심상품으로 등록할 상품을 선택해주세요!");
+					(MarketOrder.this, "간편주문으로 등록할 상품을 선택해주세요!");
 					return;
 				} else {
 					String prod_no1 = String.valueOf(table.getValueAt(idx, 0));

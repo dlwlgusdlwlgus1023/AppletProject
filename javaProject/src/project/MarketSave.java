@@ -91,10 +91,10 @@ public class MarketSave extends JFrame {
 		btnUp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				if (tfTot.getText().equals("0원")) {
-					JOptionPane.showMessageDialog(MarketSave.this, "관심상품에 추가하실 물품의 수량을 선택해주세요!");
+					JOptionPane.showMessageDialog(MarketSave.this, "간편주문으로 추가하실 물품의 수량을 선택해주세요!");
 				} else {
 					int response=JOptionPane.showConfirmDialog(
-							MarketSave.this, "관심상품에 추가하시겠습니까?");
+							MarketSave.this, "간편주문에 추가하시겠습니까?");
 					if(response==JOptionPane.YES_OPTION) {
 							MarketLogin ma = new MarketLogin();
 							int num=0;
@@ -106,7 +106,7 @@ public class MarketSave extends JFrame {
 							SellDAO2 sdao = new SellDAO2();
 							int result1 = sdao.insertSell2(sdto);
 							if(result1==1) {
-								JOptionPane.showMessageDialog(MarketSave.this, "관심상품에 추가되었습니다.");
+								JOptionPane.showMessageDialog(MarketSave.this, "간편주문에 추가되었습니다.");
 								frm.refreshTable();
 								dispose();
 							}

@@ -63,7 +63,7 @@ public class MarketBasket extends JFrame {
 	 * Create the frame.
 	 */
 	public MarketBasket(MarketLogin frm) {
-		setTitle("빠른구매");
+		setTitle("간편주문");
 		dao = new SellDAO2();
 		cols = new Vector();
 		cols.add("고유번호");
